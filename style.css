@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  background: linear-gradient(to left, #fefefe, #ddd, #eee);
+}
+
+.one {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.img1 {
+  left: 0;
+  top: 20%;
+  position: absolute;
+  background: url(2022_07_11_16_49_IMG_1384.JPG);
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 5px 15px #000;
+}
+
+.img2 {
+  position: absolute;
+  right: 0;
+  top: 35%;
+  background: url(2022_10_05_22_05_IMG_1530.JPG);
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 5px 15px #000;
+}
+h1
+{
+  text-shadow: 0 5px 15px #f28c28;
+  text-shadow: 0 15px 2c5px #f28c28;
+}
+.know
+{
+  position: absolute;
+font-size: 30px;
+top: 65%;
+left: 100px;
+}
+.wife
+{
+  position: absolute;
+  top: 75%;
+  left: 150px;
+  font-size: 30px;  
+  opacity: 0;
+}
+.tell
+{
+  position: absolute;
+  top: 70%;
+  left: 250px;
+  font-size: 30px;  
+  
+}
+.tell:hover + .wife{
+animation: show 2s ease;
+}
+@keyframes show
+{
+  0%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+.btn
+{
+  display: flex;
+  position: absolute;
+  top: 80%;
+  left: 25%;
+width: 500px;
+height: 50px;
+border: 1px #F28C28 solid;
+border-radius: 20px;
+text-align: center;
+align-items: center;
+justify-content: center;
+align-content: center;
+padding: 15px;
+transition: 0.5s;
+}
+.btn span
+{
+  font-size: 30px;
+}
+.btn:hover{
+  background-color: #F28C28;
+  color: white;
+}
